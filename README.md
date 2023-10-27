@@ -16,6 +16,7 @@ Version 1.0 contains 47,031 nodes of 11 types and 2,250,197 relationships of 24 
 
 The network is available in four formats:
 
++ **CSV** — see [`hetnet/csv`](hetnet/csv)
 + **JSON** — see [`hetnet/json`](hetnet/json)
 + **Neo4j** — see [`hetnet/neo4j`](hetnet/neo4j)
 + **TSV** — see [`hetnet/tsv`](hetnet/tsv)

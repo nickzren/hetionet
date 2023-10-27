@@ -111,3 +111,12 @@ The JSON format has the following top-level objects:
   }
 ]
 ```
+
+## JSON to CSV
+
+To expedite data loading through CSV format, execute the following Python script using Python 3:
+```
+python json_to_csv.py
+```
+
+_Note: The existing data in the CSV folder has already been produced by this script. No need to run it again unless the JSON data is updated._
