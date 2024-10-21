@@ -1,0 +1,218 @@
+{
+    "NodeTypes": {
+        "BiologicalProcess": {
+            "identifier": "String",
+            "license": "String",
+            "name": "String",
+            "source": "String",
+            "url": "String"
+        },
+        "MolecularFunction": {
+            "identifier": "String",
+            "license": "String",
+            "name": "String",
+            "source": "String",
+            "url": "String"
+        },
+        "Symptom": {
+            "identifier": "String",
+            "license": "String",
+            "name": "String",
+            "source": "String",
+            "url": "String"
+        },
+        "Gene": {
+            "identifier": "Long",
+            "license": "String",
+            "name": "String",
+            "source": "String",
+            "url": "String",
+            "chromosome": "String",
+            "description": "String"
+        },
+        "Anatomy": {
+            "identifier": "String",
+            "license": "String",
+            "name": "String",
+            "source": "String",
+            "url": "String",
+            "bto_id": "String",
+            "mesh_id": "String"
+        },
+        "Pathway": {
+            "identifier": "String",
+            "license": "String",
+            "name": "String",
+            "source": "String",
+            "url": "String"
+        },
+        "Disease": {
+            "identifier": "String",
+            "license": "String",
+            "name": "String",
+            "source": "String",
+            "url": "String"
+        },
+        "PharmacologicClass": {
+            "identifier": "String",
+            "license": "String",
+            "name": "String",
+            "source": "String",
+            "url": "String",
+            "class_type": "String"
+        },
+        "CellularComponent": {
+            "identifier": "String",
+            "license": "String",
+            "name": "String",
+            "source": "String",
+            "url": "String"
+        },
+        "Compound": {
+            "identifier": "String",
+            "license": "String",
+            "name": "String",
+            "source": "String",
+            "url": "String",
+            "inchi": "String",
+            "inchikey": "String"
+        },
+        "SideEffect": {
+            "identifier": "String",
+            "license": "String",
+            "name": "String",
+            "source": "String",
+            "url": "String"
+        }
+    },
+    "RelationshipTypes": {
+        "DOWNREGULATES_DdG": {
+            "license": "String",
+            "source": "String",
+            "log2_fold_change": "Double",
+            "unbiased": "Boolean"
+        },
+        "PARTICIPATES_GpCC": {
+            "license": "String",
+            "source": "String",
+            "unbiased": "Boolean"
+        },
+        "DOWNREGULATES_AdG": {
+            "source": "String",
+            "unbiased": "Boolean"
+        },
+        "UPREGULATES_AuG": {
+            "source": "String",
+            "unbiased": "Boolean"
+        },
+        "PALLIATES_CpD": {
+            "license": "String",
+            "source": "String",
+            "unbiased": "Boolean"
+        },
+        "INCLUDES_PCiC": {
+            "license": "String",
+            "source": "String",
+            "unbiased": "Boolean"
+        },
+        "BINDS_CbG": {
+            "license": "String",
+            "unbiased": "Boolean",
+            "actions": "StringArray",
+            "pubmed_ids": "StringArray",
+            "sources": "StringArray",
+            "urls": "StringArray",
+            "affinity_nM": "Double"
+        },
+        "PRESENTS_DpS": {
+            "license": "String",
+            "source": "String",
+            "unbiased": "Boolean"
+        },
+        "PARTICIPATES_GpMF": {
+            "license": "String",
+            "source": "String",
+            "unbiased": "Boolean"
+        },
+        "RESEMBLES_DrD": {
+            "license": "String",
+            "source": "String",
+            "unbiased": "Boolean"
+        },
+        "RESEMBLES_CrC": {
+            "license": "String",
+            "source": "String",
+            "unbiased": "Boolean",
+            "similarity": "Double"
+        },
+        "ASSOCIATES_DaG": {
+            "license": "String",
+            "unbiased": "Boolean",
+            "sources": "StringArray"
+        },
+        "REGULATES_GrG": {
+            "source": "String",
+            "unbiased": "Boolean",
+            "method": "String",
+            "subtypes": "StringArray"
+        },
+        "TREATS_CtD": {
+            "license": "String",
+            "source": "String",
+            "unbiased": "Boolean"
+        },
+        "UPREGULATES_CuG": {
+            "source": "String",
+            "unbiased": "Boolean",
+            "method": "String",
+            "z_score": "Double"
+        },
+        "DOWNREGULATES_CdG": {
+            "source": "String",
+            "unbiased": "Boolean",
+            "method": "String",
+            "z_score": "Double"
+        },
+        "INTERACTS_GiG": {
+            "unbiased": "Boolean",
+            "sources": "StringArray"
+        },
+        "PARTICIPATES_GpPW": {
+            "license": "String",
+            "source": "String",
+            "url": "String",
+            "unbiased": "Boolean"
+        },
+        "LOCALIZES_DlA": {
+            "license": "String",
+            "source": "String",
+            "unbiased": "Boolean"
+        },
+        "PARTICIPATES_GpBP": {
+            "license": "String",
+            "source": "String",
+            "unbiased": "Boolean"
+        },
+        "UPREGULATES_DuG": {
+            "license": "String",
+            "source": "String",
+            "log2_fold_change": "Double",
+            "unbiased": "Boolean"
+        },
+        "CAUSES_CcSE": {
+            "license": "String",
+            "source": "String",
+            "url": "String",
+            "unbiased": "Boolean"
+        },
+        "EXPRESSES_AeG": {
+            "license": "String",
+            "unbiased": "Boolean",
+            "sources": "StringArray"
+        },
+        "COVARIES_GcG": {
+            "source": "String",
+            "unbiased": "Boolean"
+        }
+    }
+}

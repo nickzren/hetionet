@@ -1,5 +1,6 @@
 LOAD CSV WITH HEADERS FROM 'file:///edge_Compound_binds_Gene.csv' AS row
-MATCH (a:Compound {identifier: toString(row.source_id)}), (b:Gene {identifier: toInteger(row.target_id)})
+MATCH (a:Compound {identifier: toString(row.source_id)})
+MATCH (b:Gene {identifier: toInteger(row.target_id)})
 CREATE (a)-[r:BINDS_CbG]->(b)
 SET r.actions = split(replace(replace(replace(row.actions, '[', ''), ']', ''), "'", ''), ','),
  r.affinity_nM = toFloat(row.affinity_nM),

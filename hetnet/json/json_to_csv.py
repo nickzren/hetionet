@@ -119,8 +119,11 @@ def update_edge_files_and_cypher_files(filename, edge, edge_writer, edge_file, e
 
         edge_cypher_file.seek(0)
         edge_cypher_file.truncate()
+
+        # Separate MATCH clauses to avoid Cartesian products
         edge_cypher_file.write(f"LOAD CSV WITH HEADERS FROM 'file:///{filename}' AS row\n")
-        edge_cypher_file.write(f"MATCH (a:{source_label} {{identifier: {determine_type(edge['source_id'][1])}(row.source_id)}}), (b:{target_label} {{identifier: {determine_type(edge['target_id'][1])}(row.target_id)}})\n")
+        edge_cypher_file.write(f"MATCH (a:{source_label} {{identifier: {determine_type(edge['source_id'][1])}(row.source_id)}})\n")
+        edge_cypher_file.write(f"MATCH (b:{target_label} {{identifier: {determine_type(edge['target_id'][1])}(row.target_id)}})\n")
         edge_cypher_file.write(f"CREATE (a)-[r:{rel_type_formatted}]->(b)\n")
 
         for new_field in new_fields:
