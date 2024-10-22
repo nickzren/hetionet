@@ -10,7 +10,7 @@ DOI: [10.7554/elife.26726](https://doi.org/10.7554/elife.26726) · PMID: [289369
 
 Version 1.0 contains 47,031 nodes of 11 types and 2,250,197 relationships of 24 types. This repository is currently only a download location for Hetionet. The data integration and hetnet creation occurs in a separate repository ([`dhimmel/integrate`](https://github.com/dhimmel/integrate/tree/d482033bcaa913a976faf4a6ee08497281c739c3)) and is imported to this repository by [`import.ipynb`](import.ipynb).
 
-### Docker Setup and Initialization
+## Docker Setup and Initialization
 
 ```bash
 # Docker and Docker Compose are prerequisites
@@ -23,6 +23,10 @@ bash init.sh
 - **Neo4j Browser**: http://localhost:7474 (for interactive querying via the web browser)
 - **Bolt Protocol**: bolt://localhost:7687 (for programmatic access using drivers like Python, Java, etc.)
 - **No Authentication Required**
+
+## ChatGPT
+
+Customized GPT to ask questions and generate Cypher queries for Neo4j: [Hetionet Neo4j GPT](https://chatgpt.com/g/g-faBIJaNnD-hetionet-neo4j)
 
 ## Download Hetionet
 
