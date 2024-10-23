@@ -28,6 +28,10 @@ bash init.sh
 
 Customized GPT to ask questions and generate Cypher queries for Neo4j: [Hetionet Neo4j GPT](https://chatgpt.com/g/g-faBIJaNnD-hetionet-neo4j)
 
+## Text-to-Cypher
+
+Convert natural language queries into Cypher scripts using an AI agent framework: [Text-to-Cypher](https://github.com/nickzren/text-to-cypher)
+
 ## Download Hetionet
 
 [![Latest Zenodo DOI](https://zenodo.org/badge/56091268.svg)](https://zenodo.org/badge/latestdoi/56091268)
