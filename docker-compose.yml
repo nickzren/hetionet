@@ -1,4 +1,3 @@
-version: '3'
 services:
   hetionet:
     image: nickzren/hetionet:latest
@@ -6,6 +5,3 @@ services:
     ports:
       - "7474:7474"
       - "7687:7687"
-    environment:
-      NEO4J_AUTH: "none"
-      NEO4J_initial_dbms_default__database: hetionet
